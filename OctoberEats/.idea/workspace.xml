@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0c14775e-06e7-412c-9843-66a3d5eb97ce" name="Changes" comment="UI Mejorado" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2kVdwWjuaB7vCApKOqzZDJkJoZ8" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "Application.OctoberEats.executor": "Run",
+    "Application.VentanaLogIn.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Ignac/OneDrive - Universidad Fidélitas/Cursos de la Universidad/Ing Sistemas/Programación Cliente Servidor - 2024/Proyecto Final/Cliente-Servidor-Grupo-4-main/Cliente-Servidor-Grupo-4-main/OctoberEats/src/main/java/octoberEats/UI"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Ignac\OneDrive - Universidad Fidélitas\Cursos de la Universidad\Ing Sistemas\Programación Cliente Servidor - 2024\Proyecto Final\Cliente-Servidor-Grupo-4-main\Cliente-Servidor-Grupo-4-main\OctoberEats\src\main\java\octoberEats\UI" />
+      <recent name="C:\Users\Ignac\OneDrive - Universidad Fidélitas\Cursos de la Universidad\Ing Sistemas\Programación Cliente Servidor - 2024\Proyecto Final\Cliente-Servidor-Grupo-4-main\Cliente-Servidor-Grupo-4-main\OctoberEats\src\main\java\octoberEats\Modelos" />
+      <recent name="C:\Users\Ignac\OneDrive - Universidad Fidélitas\Cursos de la Universidad\Ing Sistemas\Programación Cliente Servidor - 2024\Proyecto Final\Cliente-Servidor-Grupo-4-main\Cliente-Servidor-Grupo-4-main\OctoberEats\src\main\java\octoberEats" />
+      <recent name="C:\Users\Ignac\OneDrive - Universidad Fidélitas\Cursos de la Universidad\Ing Sistemas\Programación Cliente Servidor - 2024\Proyecto Final\Cliente-Servidor-Grupo-4-main\Cliente-Servidor-Grupo-4-main\OctoberEats\src\main\java\octoberEats\DB" />
+      <recent name="C:\Users\Ignac\OneDrive - Universidad Fidélitas\Cursos de la Universidad\Ing Sistemas\Programación Cliente Servidor - 2024\Proyecto Final\Cliente-Servidor-Grupo-4-main\Cliente-Servidor-Grupo-4-main\OctoberEats\src\main\java" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Ignac\OneDrive - Universidad Fidélitas\Cursos de la Universidad\Ing Sistemas\Programación Cliente Servidor - 2024\Proyecto Final\Cliente-Servidor-Grupo-4-main\Cliente-Servidor-Grupo-4-main\OctoberEats\src\main\java\octoberEats\imagenes" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="octoberEats.Main" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0c14775e-06e7-412c-9843-66a3d5eb97ce" name="Changes" comment="" />
+      <created>1723372916348</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1723372916348</updated>
+    </task>
+    <task id="LOCAL-00001" summary="arreglado">
+      <option name="closed" value="true" />
+      <created>1723373016216</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1723373016216</updated>
+    </task>
+    <task id="LOCAL-00002" summary="arreglado">
+      <option name="closed" value="true" />
+      <created>1723413458820</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1723413458820</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Medio arreglado boton usuario">
+      <option name="closed" value="true" />
+      <created>1723415385457</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1723415385457</updated>
+    </task>
+    <task id="LOCAL-00004" summary="UI Mejorado">
+      <option name="closed" value="true" />
+      <created>1723680825445</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1723680825445</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="arreglado" />
+    <MESSAGE value="Medio arreglado boton usuario" />
+    <MESSAGE value="UI Mejorado" />
+    <option name="LAST_COMMIT_MESSAGE" value="UI Mejorado" />
+  </component>
+</project>
