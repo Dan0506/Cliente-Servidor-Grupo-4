@@ -9,10 +9,8 @@ import org.octoberEats.DB.ConexcionDB;
 import org.octoberEats.DB.RestauranteDAO;
 import org.octoberEats.DB.MenuDAO;
 import org.octoberEats.DB.ItemMenuDAO;
-import org.octoberEats.Modelos.Restaurante;
+import org.octoberEats.Modelos.*;
 import org.octoberEats.Modelos.Menu;
-import org.octoberEats.Modelos.ItemMenu;
-import org.octoberEats.Modelos.Carrito;
 
 public class InterfazOctoberEats extends JFrame {
     private JComboBox<Restaurante> restauranteComboBox;
@@ -100,6 +98,12 @@ public class InterfazOctoberEats extends JFrame {
         JPanel topPanel = new JPanel();
         topPanel.add(new JLabel("Seleccione Restaurante:"));
         topPanel.add(restauranteComboBox);
+        topPanel.add(new JLabel("Restaurante:"));
+        JLabel reststatus = new JLabel("Pendiente");
+        topPanel.add(reststatus);
+        topPanel.add(new JLabel("Repartidor:"));
+        JLabel drivstatus = new JLabel("Pendiente");
+        topPanel.add(drivstatus);
 
         JPanel centerPanel = new JPanel(new BorderLayout());
         centerPanel.add(new JScrollPane(menuList), BorderLayout.CENTER);
@@ -111,7 +115,6 @@ public class InterfazOctoberEats extends JFrame {
         bottomPanel.add(removeButton);
         bottomPanel.add(viewCartButton);
         bottomPanel.add(proceedButton);
-
         add(topPanel, BorderLayout.NORTH);
         add(centerPanel, BorderLayout.CENTER);
         add(bottomPanel, BorderLayout.SOUTH);
@@ -180,7 +183,8 @@ public class InterfazOctoberEats extends JFrame {
         proceedButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                procederConPago();
+                reststatus.setText("Preparando pedido");
+                procederConPago(reststatus, drivstatus);
             }
         });
     }
@@ -216,7 +220,7 @@ public class InterfazOctoberEats extends JFrame {
         JOptionPane.showMessageDialog(this, carritoInfo.toString(), "Carrito", JOptionPane.INFORMATION_MESSAGE);
     }
 
-    private void procederConPago() {
+    private void procederConPago(JLabel rest, JLabel driv) {
         String[] opciones = {"Tarjeta", "Efectivo"};
         int seleccion = JOptionPane.showOptionDialog(this, "Seleccione el método de pago", "Método de Pago", JOptionPane.DEFAULT_OPTION, JOptionPane.INFORMATION_MESSAGE, null, opciones, opciones[0]);
         if (seleccion != -1) {
@@ -227,13 +231,13 @@ public class InterfazOctoberEats extends JFrame {
             int tiempoLlegada = 10 + (int)(Math.random() * 21);
 
             // Generar el mensaje de confirmación usando el método centralizado
-            String mensajeConfirmacion = generarMensajeConfirmacion(metodoPago, total, tiempoLlegada);
+            String mensajeConfirmacion = generarMensajeConfirmacion(metodoPago, total, tiempoLlegada, rest, driv);
 
             JOptionPane.showMessageDialog(this, mensajeConfirmacion, "Confirmación de Pago", JOptionPane.INFORMATION_MESSAGE);
         }
     }
 
-    private String generarMensajeConfirmacion(String metodoPago, double total, int tiempoLlegada) {
+    private String generarMensajeConfirmacion(String metodoPago, double total, int tiempoLlegada, JLabel rest, JLabel driv) {
         StringBuilder mensaje = new StringBuilder("Detalle de la Compra:\n");
         for (ItemMenu item : carrito.getPlatos()) {
             mensaje.append(item.getNombre()).append(" - ").append(item.getPrecio()).append("\n");
@@ -242,6 +246,16 @@ public class InterfazOctoberEats extends JFrame {
         mensaje.append("\nMétodo de Pago: ").append(metodoPago);
         mensaje.append("\nSu entrega será en: Universidad Fidélitas");
         mensaje.append("\nTiempo de llegada estimado: ").append(tiempoLlegada).append(" minutos");
+        Pedido thread1 = new Pedido(rest);
+        Repartidor thread2 = new Repartidor(tiempoLlegada, driv);
+        thread1.start();
+        try {
+            thread1.join(); // wait for the worker thread to finish
+        } catch (InterruptedException e) {
+            // Handle exception if necessary
+        }
+        thread2.start();
+
         return mensaje.toString();
     }
 

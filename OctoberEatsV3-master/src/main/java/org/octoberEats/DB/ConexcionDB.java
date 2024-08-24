@@ -9,7 +9,7 @@ public class ConexcionDB {
     ResultSet resultado = null;
     String url = "jdbc:mysql://localhost:3306/october_eats";
     String username = "root";
-    String password = "Jguillen";
+    String password = "1234";
 
     public void setConexion()
     {
